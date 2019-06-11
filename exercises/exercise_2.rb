@@ -5,7 +5,7 @@ puts "Exercise 2"
 puts "----------"
 
 @store1 = Store.first
-@store2 = Store.where(id = 2)
+@store2 = Store.where(id: 2)[0]
 
 @store1.name = "Toronto"
 

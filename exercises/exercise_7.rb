@@ -9,4 +9,8 @@ require_relative './exercise_6'
 puts "Exercise 7"
 puts "----------"
 
-# Your code goes here ...
+@store_name = gets.chomp
+
+@new_store = Store.create(name: "#{@store_name}")
+puts "Errors: #{@new_store.errors.inspect}"
+
